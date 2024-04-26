@@ -1,0 +1,155 @@
+head {
+    background-color: aquamarine;
+}
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    background-color: #020202;
+    }
+
+    /*-- footer--*/
+body {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    background-color: #000000;
+}
+
+
+
+.navegacao {
+
+    display:inline-flex;
+    justify-content: space-between;
+    background-color: #220e83;
+    align-items: center;
+    border: 1px solid #010003;
+    border-radius: 10px;
+    color: #030303;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*-- Codigo pra balão de expandir --*/
+.navegacao{
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navegacao:hover {
+    color: yellow;
+    transform: scale(1.1);
+}
+
+.navegacao:active {
+    transform: scale(0.9);
+}
+
+
+.navegacao:hover {
+    color: blue;
+}
+
+    
+
+footer{
+    color:#fff;
+    background-color: #220e83;
+    color: #220e83;
+    text-align: center;
+    padding: 10px 0;
+     }
+
+
+.sobre-mim{
+    position: relative;
+    width: 100%;
+    min-width: 825px;
+    height:700px;
+    text-align: left;
+    float: left;
+    font-weight: 100;
+    font-style: normal;
+    margin-left:3.7%;
+    margin-right:3.7%;
+    padding-left:0.5%;
+    padding-right:0.5%;
+
+}
+.habilidades{
+   
+    position: relative;
+    width: 0;
+    min-width: 825px;
+    height:700px;
+    text-align: right;
+    float: right;
+    margin-left:3.7%;
+    margin-right:3.7%;
+    padding-left:0.5%;
+    padding-right:0.5%;
+}
+
+.item-social {
+    display: icon;
+    background-color: #010003;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    color: #bbb;
+    font-size: 20px;
+    margin: 10px auto;
+   
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+    width: 15px;
+}
+
+.menu{
+    text-align: center;
+}
+
+.imagem {
+    align-items: right;
+    width: 200px;
+
+    animation: pulsar 1.5s infinite; /* Define o nome da animação, a duração, o número de repetições e o modo de repetição */
+  }
+  
+  @keyframes pulsar {
+    0% {
+      transform: scale(1); /* Começa com a escala normal */
+    }
+    50% {
+      transform: scale(1.1); /* Aumenta a escala em 10% no meio da animação */
+    }
+    100% {
+      transform: scale(1); /* Volta à escala normal no final */
+    }
+  }
+
+.div_imagem{
+    text-align: right;
+    margin: auto;
+}
+
+.trabalho__experiencia__caixas,
+.trabalho__tecnologias__caixas,
+.educacao__faculdade__caixas,
+.educacao__cursos__caixas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    flex-grow: 0;
+    width: 50px;
+}
